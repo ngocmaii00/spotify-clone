@@ -56,7 +56,7 @@ const UploadModal = () => {
 
       if (songError) {
         setIsLoading(false);
-        return toast.error("Fail song upload");
+        return toast.error("Failed song upload");
       }
 
       //Upload image
@@ -70,7 +70,7 @@ const UploadModal = () => {
 
       if (imageError) {
         setIsLoading(false);
-        return toast.error("Fail image upload");
+        return toast.error("Failed image upload");
       }
 
       const { error: supabaseError } = await supabaseClient
